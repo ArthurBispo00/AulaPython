@@ -1,0 +1,14 @@
+import os
+
+os.system('cls')
+
+
+cpf = int (input("Informe o CPF:"))
+resp = ""
+
+while cpf  != 0:
+    dig  = cpf % 10
+    resp = resp + str(dig) + ', '
+    cpf = cpf // 10
+print(resp)
+
