@@ -1,0 +1,21 @@
+numero = 0
+
+while True:
+    entrada = input("Digite um número inteiro: ")
+    if entrada.isdigit():
+        numero = int(entrada)
+        break
+    else:
+        print("Por favor, digite apenas números inteiros.")
+
+print("O número digitado é:", numero)
+numero = None
+verificadados = 0
+
+while verificadados == 0:
+    entrada = input("Digite um número inteiro: ")
+    if entrada.isdigit():
+        numero = int(entrada)
+        verificadados = 1
+    else:
+        print("Por favor, digite apenas números inteiros.")
